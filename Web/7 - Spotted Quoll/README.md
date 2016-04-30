@@ -11,3 +11,6 @@ into the cookie.
 
 Your flag is CTF{but_wait,theres_more.if_you_call} ... but is there more(1)? or
 less(1)?
+
+The flag hints at further exploitation.  The picklexploit.py works locally, but
+not as the cookie value.
